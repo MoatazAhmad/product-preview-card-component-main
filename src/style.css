@@ -1,1 +1,51 @@
 @import "tailwindcss";
+:root {
+  --wheat-color: #f3eae3;
+  --white-color: #ffffff;
+  --green-color: #3d8168;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+@font-face {
+  font-family: "nottke"; /* Name the font family */
+  src: url("./fonts/NOTTKE/NOTTKE.TTF") format("truetype"); /* Path to the font */
+}
+@font-face {
+  font-family: "inesHeavy"; /* Custom font name */
+  src: url("./fonts/ines-heavy/ines-heavy.otf") format("opentype"); /* Path to the OTF file */
+}
+@font-face {
+  font-family: "encropadaProExtrabold"; /* Custom font name */
+  src: url("./fonts/encropada-pro-extrabold/encorpada-pro-extrabold.otf")
+    format("opentype"); /* Path to the OTF file */
+}
+/* Applying the custom font */
+.nottkeFont {
+  font-family: "nottke", sans-serif; /* Fallback to a default font */
+}
+/* Applying the custom font */
+.inesHeavyFont {
+  font-family: "inesHeavy", sans-serif; /* Fallback to a default font */
+}
+.encropadaProExtraboldFont {
+  font-family: "encropadaProExtrabold", sans-serif; /* Fallback to a default font */
+}
+.wheat-color {
+  color: var(--wheat-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+.green-color {
+  color: var(--green-color);
+}
+.bg-wheat-color {
+  background-color: var(--wheat-color);
+}
+.bg-white-color {
+  background-color: var(--white-color);
+}
+.bg-green-color {
+  background-color: var(--green-color);
+}
